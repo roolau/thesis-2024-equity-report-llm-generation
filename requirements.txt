@@ -1,0 +1,15 @@
+# Versions used in the thesis (spring 2024, Python 3.11).
+# Exact pins come from the original environment; numpy/pandas/requests/python-dotenv
+# were Conda builds there, so only compatible ranges are given for those.
+openai==1.16.2
+tiktoken==0.6.0
+llama-index-core==0.10.34
+llama-index-llms-openai==0.1.16
+llama-index-embeddings-openai==0.1.9
+PyMuPDF==1.24.1
+rouge==1.0.1
+openpyxl==3.0.10
+numpy>=1.24,<2
+pandas>=2.0,<2.2
+requests>=2.31
+python-dotenv>=0.21
