@@ -2,7 +2,7 @@
 
 > **Archived (spring 2024).** This is the code from my M.Sc. thesis at LUT University. It was written for the GPT-3.5 generation of models and is kept as a record of the work, not maintained. The models it calls have since been superseded or retired, so it will not reproduce the original outputs as-is.
 
-**Thesis:** *Toward algorithm-based sell-side equity analyst storytelling* (LUT University, 2024). <!-- TODO: add the LUTPub / URN link -->
+**Thesis:** [*Toward algorithm-based sell-side equity analyst storytelling*](https://urn.fi/URN:NBN:fi-fe2024052737138) (LUT University, 2024)
 
 ## What it does
 
