@@ -70,6 +70,19 @@ Looking back with more experience, I would do these differently. They are left a
 - **ROUGE is computed against the input, not a reference answer.** `evaluation.py` scores each response against its own prompt plus source documents. The score therefore measures lexical overlap with the source material, a rough groundedness proxy, not similarity to an analyst-written risk section. The prompt differs between configurations (few-shot examples, retrieved chunks), so scores are not strictly comparable across them.
 - **Perplexity is only available without RAG**, because the LlamaIndex query engine doesn't expose log-probabilities.
 - **Small sample.** 20 fine-tuning examples and a handful of evaluation companies, one run each at temperature 0.5.
+- Harvia appears in both the fine-tuning set and the evaluation set.
+
+## Findings
+
+Outputs for Afarak, Harvia and Neste were rated 1–5 by a panel of three people and by GPT-4
+(1 = total failure, 3 = as good as ChatGPT, 5 = best possible with current technology).
+
+- No variant performed significantly better than the plain baseline.
+- Fine-tuning was unreliable, despite taking most of the cost and time.
+- RAG gave a slight edge in all cases, despite being significantly cheaper than fine-tuning.
+- Counterintuitively, the less-known company received higher-quality analysis.
+
+ROUGE-1 and perplexity were recorded as secondary automatic metrics (see Known limitations).
 
 ## Changes from the original code
 
